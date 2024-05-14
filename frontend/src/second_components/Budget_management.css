@@ -1,0 +1,136 @@
+.appl {
+  max-width: 5000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-image: url('https://64.media.tumblr.com/20740a500923b8c999fe1fa4f255b6ba/8a7669064f0461f7-e7/s1280x1920/e5cfcf6386673938673f49f7f621dffd4eebda7a.jpg');
+  background-size: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.appl h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #110f1f;
+  font-weight: bold;
+}
+
+.cashflow-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.balance-container h2,
+.income-container h2,
+.expense-container h2,
+.transaction-container h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#balance,
+#income,
+#expense {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.balance-container,
+.income-container,
+.expense-container {
+  width: calc(33.33% - 20px);
+}
+
+.balance-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #aca3a3;
+  margin: 0 auto;
+}
+
+.balance-container h2,
+#balance {
+  text-align: center;
+}
+
+.expense-container {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  margin-left: 58rem;
+}
+
+.balance-container #balance {
+  margin-top: 5px;
+}
+
+.transaction-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.transaction-container li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #aca3a3;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-container li span {
+  margin-right: 10px;
+}
+
+.transaction-container li .income {
+  color: rgb(126, 184, 126);
+}
+
+.transaction-container li .expense {
+  color: rgb(209, 76, 76);
+}
+
+.form-container {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-group button {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-group button.income {
+  background-color: rgb(126, 184, 126);
+  color: #fff;
+}
+
+.btn-group button.expense {
+  background-color: rgb(209, 76, 76);
+  color: #fff;
+}

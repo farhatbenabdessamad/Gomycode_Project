@@ -1,0 +1,199 @@
+/* Header.css */
+
+.header {
+  background-color: #f6f6f6; /* Couleur de fond pour l'en-tête */
+  color: #fff; /* Couleur du texte */
+  padding: 5px; /* Espacement intérieur */
+  display: flex; /* Affichage en ligne */
+  justify-content: space-between; /* Alignement horizontal */
+  align-items: center; /* Alignement vertical */
+  border-bottom: #010408;
+  border-bottom: 2rem black;
+  border: 0px solid #ccc;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
+.logo img {
+  width: 50px; /* Taille de l'image du logo */
+  height: 50px; /* Hauteur de l'image du logo */
+  border-radius: 50%; /* Pour donner une forme de cercle à l'image */
+  object-fit: cover; /* Pour conserver les proportions de l'image */
+  
+  
+}
+
+.logo-name {
+  font-size: 25px; /* Taille de la police pour le nom du logo */
+  padding: 16px;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style-type: none; /* Supprime les puces de la liste */
+  padding: 0; /* Supprime les marges intérieures de la liste */
+  margin: 0; /* Supprime les marges extérieures de la liste */
+}
+
+.nav ul li {
+  display: inline-block; /* Affichage en ligne pour les éléments de la liste */
+  margin-right: 20px; /* Marge à droite entre les éléments de la liste */
+}
+
+.nav ul li a {
+  color: #000000; /* Couleur du texte des liens */
+  text-decoration: none; /* Supprime la décoration des liens */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header.css */
+
+/* Bouton principal */
+.pulsebutto {
+  width: 8rem;
+  background-color: #08f514; /* Couleur de fond principale */
+  color: rgb(181, 7, 7); /* Couleur du texte */
+  border: none; /* Suppression de la bordure */
+  border-radius: 5px; /* Bordure arrondie */
+  padding: 5px 15px; /* Espacement intérieur */
+  font-size: 16px; /* Taille de la police */
+  cursor: pointer; /* Curseur au survol */
+  transition: background-color 0.3s ease; /* Transition douce pour le changement de couleur de fond */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Ombre */
+
+  /* Dégradé de couleur au survol */
+  background-image: none;
+}
+
+/* Effet de pulsation au survol */
+.pulse-button:hover {
+  animation: pulse 1s infinite alternate;
+}
+
+/* Effet de pulsation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+/* Effet de transition de couleur au survol */
+.onfooor {
+  width: 8rem;
+  background-color: #687f69; /* Couleur de fond principale */
+  color: rgb(0, 0, 0); /* Couleur du texte */
+  border: none; /* Suppression de la bordure */
+  border-radius: 5px; /* Bordure arrondie */
+  padding: 5px 15px; /* Espacement intérieur */
+  font-size: 16px; /* Taille de la police */
+   /* Curseur au survol */
+  transition: background-color 0.3s ease; /* Transition douce pour le changement de couleur de fond */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Ombre */
+
+  /* Dégradé de couleur au survol */
+  background-image: linear-gradient(to right, #E9E9E9, #E9E9E9);
+}
+
+/* Effet d'ombre au survol */
+.pulse-button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.offcanvas-body {
+  background-color: rgb(241, 240, 240); /* Rendre l'arrière-plan transparent */
+}
+
+.offcanvas {
+  background-color: rgba(255, 255, 255, 0.1) !important; /* Rendre l'arrière-plan de la barre latérale très clair */
+}
+
+
+
+
+.sidebar {
+  background-color: transparent; /* Rendre l'arrière-plan transparent */
+  padding: 10px;
+
+}
+
+.sidebar h2 {
+  color: #090101;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #010408;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+   
+  
+}
+
+.sidebar nav ul li a:hover {
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

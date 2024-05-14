@@ -1,0 +1,86 @@
+/* PartnerManagement.css */
+
+.partner-management {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.partner-management h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.partner-management .form-group {
+  margin-bottom: 20px;
+}
+
+.partner-management label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.partner-management input[type="text"],
+.partner-management input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.partner-management button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.partner-management button:hover {
+  background-color: #0056b3;
+}
+
+.partner-management ul {
+  list-style: none;
+  padding: 0;
+}
+
+.partner-management li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.partner-management li strong {
+  display: block;
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.partner-management li span {
+  display: block;
+  color: #666;
+  font-size: 14px;
+}
+
+.hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+  width: 60%;
+}

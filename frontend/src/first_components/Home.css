@@ -1,0 +1,131 @@
+.home {
+  padding: 5px;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 36px;
+
+  color: #333;
+}
+
+/* Styles pour le carrousel */
+.custom-carousel {
+  margin-bottom: 60px;
+}
+
+/* Animation pour le titre */
+.home h1 {
+  animation: fadeInDown 1s ease-in-out;
+  font-weight: bold;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour le carrousel */
+.custom-carousel {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation pour les projets en vedette */
+.featured-projects {
+  margin-bottom: 60px;
+}
+
+.featured-projects h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  animation: slideInRight 1s ease-in-out;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation pour les témoignages */
+.testimonials {
+  margin-bottom: 60px;
+}
+
+.testimonials h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+.container {
+  display: flex;
+
+  padding: 1rem;
+ 
+}
+
+.image {
+  flex: 2;
+  margin-right: 20px;
+  width: 90%; /* Largeur fixe de l'image */
+}
+
+
+.description {
+  flex: 2;
+  background-color: white;
+  width: 90%;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  text-align: justify; /* Justification du texte */
+}
+
+.description li {
+  padding-left: 20px;
+  font-size: 1.1rem;
+  list-style-type: square;
+}

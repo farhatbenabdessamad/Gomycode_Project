@@ -1,0 +1,308 @@
+/* Reset des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles généraux */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    
+  }
+  @media screen and (max-width:660px){
+    .container {
+      display: flex;
+      flex-direction:column ;
+      justify-content: center;
+      align-items: center;
+      /* Espacement du haut pour éviter la superposition avec le Header */
+    }
+    
+  }
+  
+  .container {
+    display: flex;
+    margin-top: 30px; /* Espacement du haut pour éviter la superposition avec le Header */
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Project List */
+  .project-list {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .project-list h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .project-list ul {
+    list-style-type: none;
+  }
+  
+  .project-list ul li {
+    margin-bottom: 10px;
+  }
+  
+  .project-list ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .project-list ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Project Details */
+  .project-details {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .project-details h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .project-details p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  p {
+    color: #0f0f0f; /* Couleur du texte */
+    
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Bord arrondi */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    font-size: px; /* Taille de la police */
+    line-height: 1.6; /* Hauteur de ligne */
+    text-align: justify; /* Alignement du texte */
+    margin-bottom: 0px; /* Marge inférieure */
+     /* Largeur maximale */
+    margin-left: 2rem; /* Centrage horizontal */
+    margin-right: 2rem; /* Centrage horizontal */
+  }
+  
+  
+  .main-image {
+    width: 95%; /* Taille de la largeur de l'image */
+    max-width: 95%; /* Assurer que l'image ne dépasse pas la taille de son conteneur */
+    height: auto; /* Hauteur automatique pour conserver les proportions de l'image */
+    display: flex; /* Rendre l'image un élément de bloc pour une gestion plus facile */
+    margin-top: 50px; /* Centrer l'image horizontalement */
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Ajouter une ombre légère */
+    margin-left: 30px;
+  }
+  
+
+/*project map*/
+  .intro-text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .project-map-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-map {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .project-map #map {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .list-group {
+    margin-top: 20px;
+  }
+  
+  .list-group-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .Btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.4s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #1f69ca, #cf0883);
+  }
+
+  .Btnnn, .toggle  {
+    color: #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.4s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #1f69ca, #cf0883);
+  }
+  
+  .sign, .Btnnn {
+    width: 100%;
+    transition-duration: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg{
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: white;
+  }
+  
+  .text{
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: #ecf0f1;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: 0.4s;
+  }
+  
+  .Btn:hover   {
+    width: 150px;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+    background: linear-gradient(to right, #1f69ca, #d4077f);
+  }
+  
+  .Btn:hover .sign  {
+    width: 30%;
+    transition-duration: 0.4s;
+    padding-left: 12px;
+  }
+  
+  .Btn:hover .text{
+    opacity: 1;
+    width: 70%;
+    transition-duration: 0.4s;
+    padding-right: 10px;
+  }
+  
+  .Btn:active, .Btnnn {
+    transform: translate(2px, 2px);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .toggle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(1, 103, 255);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .toggle span {
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .toggle span:nth-child(1) {
+    transform: translateY(-15px);
+    width: 25px;
+    left: 15px;
+  }
+  
+  .toggle.toggle:hover span:nth-child(1) {
+    width: 40px;
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: 0.125s;
+  }
+  
+  .toggle span:nth-child(2) {
+    transform: translateY(15px);
+    width: 15px;
+    left: 15px;
+  }
+  
+  .toggle.toggle:hover span:nth-child(2) {
+    width: 40px;
+    transform: translateY(0px) rotate(315deg);
+    transition-delay: 0.125s;
+  }
+  
+  .toggle:hover span:nth-child(3) {
+    transform: translateX(60px);
+  }
+   */
